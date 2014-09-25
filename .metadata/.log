@@ -1,0 +1,319 @@
+!SESSION 2014-08-07 11:42:09.442 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-08-07 11:43:00.104
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-08-07 11:43:01.888
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.
+
+!ENTRY org.eclipse.ui 4 4 2014-08-07 11:43:01.893
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-08-07 11:43:15.804
+!MESSAGE An Android SDK is already being loaded. Please try again later.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-08-07 11:45:17.920
+!MESSAGE Failed to load properties file for project 'activitydemo'
+
+!ENTRY org.eclipse.core.resources 4 368 2014-08-07 13:50:05.886
+!MESSAGE Resource '/actdemo' does not exist.
+
+!ENTRY org.eclipse.ui 4 4 2014-08-07 17:51:15.366
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY org.eclipse.ui 4 4 2014-08-08 09:41:36.248
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+!SESSION 2014-08-08 16:27:11.782 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-08-08 16:27:28.813
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-08-08 16:27:37.714
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2014-08-08 16:27:45.112
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2014-08-08 16:27:45.112
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-08-08 16:27:45.112
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-08-08 16:27:45.112
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-08-08 16:27:45.112
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2014-08-08 16:27:45.112
+!MESSAGE Unable to restore perspective: Workspace - DDMS.
+!SUBENTRY 2 org.eclipse.ui 0 0 2014-08-08 16:27:45.112
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2014-08-08 16:27:45.112
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.112
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.112
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.112
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.113
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.113
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.113
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.113
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.113
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-08 16:27:45.113
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2014-08-08 16:27:45.113
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2014-08-08 16:27:45.113
+!MESSAGE OK
+
+!ENTRY org.eclipse.ui 4 4 2014-08-08 17:07:39.499
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2014-08-11 15:57:08.213 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-08-11 15:57:44.569
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-08-11 15:57:55.116
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2014-08-11 15:58:07.863
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2014-08-11 15:58:07.863
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2014-08-11 15:58:07.864
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2014-08-11 15:58:07.864
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2014-08-11 15:58:07.864
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2014-08-11 15:58:07.864
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2014-08-11 15:58:07.864
+!MESSAGE OK
+
+!ENTRY org.eclipse.ui 4 4 2014-08-12 10:13:51.418
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2014-08-12 10:26:47.064 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data E:\vss\007手机版\Android\Code\新建文件夹
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-08-12 10:26:53.291
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-08-12 10:27:36.099
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2014-09-23 09:45:50.246 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data E:\vss\007手机版\Android\Code\新建文件夹
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-09-23 09:46:04.317
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-09-23 15:22:30.864
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2014-09-23 15:51:58.431 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-09-23 15:52:06.712
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-09-23 15:52:11.042
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2014-09-23 15:52:14.418
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2014-09-23 15:52:14.418
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-23 15:52:14.418
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-23 15:52:14.418
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-23 15:52:14.418
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2014-09-23 15:52:14.418
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2014-09-23 15:52:14.418
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2014-09-23 15:52:14.418
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.418
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.418
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2014-09-23 15:52:14.419
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2014-09-23 15:52:14.419
+!MESSAGE OK
+
+!ENTRY org.eclipse.ui 4 4 2014-09-23 16:58:09.023
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2014-09-24 17:08:34.463 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-09-24 17:09:14.308
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-09-24 17:09:25.517
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-09-24 17:09:31.184
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2014-09-24 17:09:38.260
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2014-09-24 17:09:38.260
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2014-09-24 17:09:38.260
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2014-09-24 17:09:38.260
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.260
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.261
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.261
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.261
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.261
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.261
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-24 17:09:38.261
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2014-09-24 17:09:38.261
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2014-09-24 17:09:38.261
+!MESSAGE OK
+
+!ENTRY org.eclipse.ui 4 4 2014-09-24 17:24:40.196
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY org.eclipse.jdt.debug 4 125 2014-09-25 10:39:53.583
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Invalid stack frame
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1010)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingThisObject(JDIStackFrame.java:700)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getThis(JDIStackFrame.java:1058)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:362)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.debug 4 100 2014-09-25 10:39:53.583
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 125 2014-09-25 10:44:22.521
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Invalid stack frame
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1010)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingThisObject(JDIStackFrame.java:700)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getThis(JDIStackFrame.java:1058)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:362)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.debug 4 100 2014-09-25 10:44:22.521
+!MESSAGE Invalid stack frame

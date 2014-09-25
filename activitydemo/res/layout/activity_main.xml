@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/secondTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <EditText
+        android:id="@+id/editText123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/secondTextview"
+        android:layout_below="@+id/secondTextview"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText123"
+        android:layout_below="@+id/editText123"
+        android:text="第一个Activity" />
+
+    <Button
+        android:id="@+id/btnInsertRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callButton"
+        android:text="InsertARecord" />
+
+    <Button
+        android:id="@+id/btnQueryMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnInsertRec"
+        android:layout_alignBottom="@+id/btnInsertRec"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/callButton"
+        android:text="Query" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnInsertRec"
+        android:layout_below="@+id/btnInsertRec"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp" >
+    </ListView>
+
+</RelativeLayout>

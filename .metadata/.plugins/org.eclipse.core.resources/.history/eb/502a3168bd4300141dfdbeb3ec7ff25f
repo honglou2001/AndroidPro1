@@ -1,0 +1,7 @@
+package com.example.objserial;
+
+import com.example.domain.CommunicationShareData;
+
+public class CommunicationSerial {
+
+}

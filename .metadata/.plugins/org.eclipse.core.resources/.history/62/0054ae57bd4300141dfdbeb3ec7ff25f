@@ -1,0 +1,5 @@
+package com.example.objserial;
+
+public class CommunicationSerial {
+
+}

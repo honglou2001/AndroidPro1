@@ -1,0 +1,319 @@
+/**
+ * 
+ */
+package com.example.activitydemo;
+
+import com.example.domain.CommunicationShareData;
+import com.example.objserial.CommunicationSerial;
+
+import java.io.IOException;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.HttpVersion;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.params.HttpClientParams;
+import org.apache.http.conn.ClientConnectionManager;
+import org.apache.http.conn.scheme.PlainSocketFactory;
+import org.apache.http.conn.scheme.Scheme;
+import org.apache.http.conn.scheme.SchemeRegistry;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpProtocolParams;
+import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+/**
+ * @author Administrator
+ *
+ */
+public class secondActivity extends Activity{
+	public static final int RESULT_CODE=1;
+
+	private TextView tv=null;
+
+    private Button btnSecondButton;
+    private Button btnQuery = null;
+	private static final int timeoutConnection = 20000;   
+	private static final int timeoutSocket = 20000;
+	private Context myContext;
+	
+	public void init(Context _Context, UICallback _UICallback) {
+		myContext = _Context;
+
+	}
+	
+	// 回调接口
+	public interface UICallback {
+
+		public void call(short MISSION);
+
+	}
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		// TODO Auto-generated method stub
+
+	   super.onCreate(savedInstanceState);
+
+	   setContentView(R.layout.activity_second);
+
+	   //从第一个activity接收参数
+
+	   Intent intent = getIntent();
+
+	   Bundle bundle = intent.getExtras();
+
+	   String str = bundle.getString("str");
+
+	   tv=(TextView)findViewById(R.id.secondTextview);
+
+	   tv.setText(str);//显示接收到参数
+
+	   //点击时返回参数到第一个activity
+
+	   btnSecondButton = (Button)findViewById(R.id.secondButton);
+
+	   btnSecondButton.setOnClickListener(listener);
+	   
+	   btnQuery =  (Button)findViewById(R.id.btnQuery);
+	   btnQuery.setOnClickListener(listener); 
+
+	}
+
+	private OnClickListener listener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+
+//			//TODO Auto-generated method stub
+//			Intent intent = new Intent();
+//			intent.putExtra("back", "come from second activiy");
+//			setResult(RESULT_CODE, intent);
+//			finish();
+			
+			switch(v.getId()){
+
+			case R.id.secondButton:{
+				//TODO Auto-generated method stub
+				Intent intent = new Intent();
+				intent.putExtra("back", "come from second activiy");
+				setResult(RESULT_CODE, intent);
+				finish();
+			
+			}
+			break;
+			case R.id.btnQuery:{
+				
+				requestFDailyUrl(myContext,new DetailRequestListener());
+				
+				//String str = request("http://www.rntech.com.cn:820/Comminicate/GetInfo.ashx");
+				//Log.i("Info",str);
+			
+			}
+			break;
+			default:
+				break;
+			}			
+		}
+
+//		@Override
+//		public void onClick(DialogInterface dialog, int which) {
+//			// TODO Auto-generated method stub
+//			Intent intent = new Intent();
+//
+//			intent.putExtra("back", "come from second activiy");
+//
+//			setResult(RESULT_CODE, intent);
+//
+//			finish();
+//			
+//		}
+	};
+
+	class DetailRequestListener implements IRequestListener {
+		@Override
+		public void onComplete(String response) {
+			try {
+				 mPigDetail = new PigDetail();
+				   mPigDetail = PigDetailResponse.getPigDetails(response);
+					Message myMessage = new Message();
+					myMessage.what = MISSION_FIELD_DAILY_DETAIL;
+					myHandler.sendMessage(myMessage);	
+				Log.i("Info",response);
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			 
+			}finally{
+				
+			}
+			
+		}
+		@Override
+		public void onError(Exception e) {
+			//Toast.makeText(myContext, "请求登录数据失败", 2000).show();
+		}
+	}
+	
+	
+	public void requestFDailyUrl(Context myContext, final IRequestListener listener) {
+		// TODO Auto-generated method stub
+
+		final String registerString ="http://www.rntech.com.cn:820/Comminicate/GetInfo.ashx";
+		new Thread(){
+			public void run() {
+                try {
+                	String result = request(registerString);//通过网络下载数据
+                	listener.onComplete(result);
+                } catch (Exception e) {
+                	listener.onError(e);
+                }
+            }
+
+			
+		}.start();
+	}
+	
+	public static interface IRequestListener {
+
+        public void onComplete(String response);
+
+        public void onError(Exception e);
+
+    }
+
+	
+	private static String request(String dailyUrl) {
+		// TODO Auto-generated method stub
+		 
+		// HttpGet对象
+		HttpGet httpRequest = new HttpGet(dailyUrl);
+		String strResult = "";
+		try {
+			// HttpClient对象
+			HttpClient httpClient = createHttpClient();
+			// 获得HttpResponse对象
+			HttpResponse httpResponse = httpClient.execute(httpRequest);
+			if (httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {//网络返回结果正确
+				// 取得返回的数据
+				strResult = EntityUtils.toString(httpResponse.getEntity());
+			 
+			} 
+
+		} catch (ClientProtocolException e) {
+			Log.e("Info", "protocol error");
+			e.printStackTrace();
+		} catch (IOException e) {
+			Log.e("Info","IO error");
+			e.printStackTrace();
+		}
+		catch (Exception e) {
+			Log.e("Info","IO error");
+			e.printStackTrace();
+		}
+		return strResult;
+	}
+	
+	// 创建 HttpParams 以用来设置 HTTP 参数 
+	public static HttpClient createHttpClient() {
+
+		
+		BasicHttpParams httpParams = new BasicHttpParams();
+		// http版本设置
+		HttpProtocolParams.setVersion(httpParams, HttpVersion.HTTP_1_1);
+		HttpProtocolParams.setContentCharset(httpParams, HTTP.UTF_8);
+		HttpProtocolParams.setUseExpectContinue(httpParams, true);
+
+		// 设置连接超时和 Socket 超时，以及 Socket 缓存大小
+		HttpConnectionParams
+				.setConnectionTimeout(httpParams, timeoutConnection);
+		HttpConnectionParams.setSoTimeout(httpParams, timeoutSocket);
+		// HttpConnectionParams.setSocketBufferSize(httpParams, 8192);
+
+		// 设置重定向，缺省为 true
+
+		HttpClientParams.setRedirecting(httpParams, true);
+
+		// 设置 user agent
+
+		String userAgent = "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2) Gecko/20100115 Firefox/3.6";
+		HttpProtocolParams.setUserAgent(httpParams, userAgent);
+
+		// 创建一个 HttpClient 实例
+		// 注意 HttpClient httpClient = new HttpClient(); 是Commons HttpClient
+		// 中的用法，在 Android 1.5 中我们需要使用 Apache 的缺省实现 DefaultHttpClient
+
+		// 设置HttpClient支持HTTP和HTTPS两种模式
+		SchemeRegistry schReg = new SchemeRegistry();
+		schReg.register(new Scheme("http", PlainSocketFactory
+				.getSocketFactory(), 80));
+		// schReg.register(new
+		// Scheme("https",SSLSocketFactory.getSocketFactory(), 443));
+		ClientConnectionManager conMgr = new ThreadSafeClientConnManager(
+				httpParams, schReg);
+		// HttpClient httpClient = new DefaultHttpClient(conMgr, httpParams);
+
+		return new DefaultHttpClient(conMgr, httpParams);
+	}
+	
+	
+	// 创建 HttpParams 以用来设置 HTTP 参数 
+		public static HttpClient createHttpClientShort() {
+
+			
+			BasicHttpParams httpParams = new BasicHttpParams();
+			// http版本设置
+			HttpProtocolParams.setVersion(httpParams, HttpVersion.HTTP_1_1);
+			HttpProtocolParams.setContentCharset(httpParams, HTTP.UTF_8);
+			HttpProtocolParams.setUseExpectContinue(httpParams, true);
+
+			// 设置连接超时和 Socket 超时，以及 Socket 缓存大小
+			HttpConnectionParams
+					.setConnectionTimeout(httpParams, 3000);
+			HttpConnectionParams.setSoTimeout(httpParams, 3000);
+			// HttpConnectionParams.setSocketBufferSize(httpParams, 8192);
+
+			// 设置重定向，缺省为 true
+
+			HttpClientParams.setRedirecting(httpParams, true);
+
+			// 设置 user agent
+
+			String userAgent = "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2) Gecko/20100115 Firefox/3.6";
+			HttpProtocolParams.setUserAgent(httpParams, userAgent);
+
+			// 创建一个 HttpClient 实例
+			// 注意 HttpClient httpClient = new HttpClient(); 是Commons HttpClient
+			// 中的用法，在 Android 1.5 中我们需要使用 Apache 的缺省实现 DefaultHttpClient
+
+			// 设置HttpClient支持HTTP和HTTPS两种模式
+			SchemeRegistry schReg = new SchemeRegistry();
+			schReg.register(new Scheme("http", PlainSocketFactory
+					.getSocketFactory(), 80));
+			// schReg.register(new
+			// Scheme("https",SSLSocketFactory.getSocketFactory(), 443));
+			ClientConnectionManager conMgr = new ThreadSafeClientConnManager(
+					httpParams, schReg);
+			// HttpClient httpClient = new DefaultHttpClient(conMgr, httpParams);
+
+			return new DefaultHttpClient(conMgr, httpParams);
+		}
+}
+
