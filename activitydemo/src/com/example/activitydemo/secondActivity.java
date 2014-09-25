@@ -54,31 +54,31 @@ public class secondActivity extends Activity{
 	public static final int RESULT_CODE=1;
 
 	private TextView tv=null;
-
+	private static final int REQUEST_CODE=1;
     private Button btnSecondButton;
     private Button btnQuery = null;
 	private static final int timeoutConnection = 20000;   
 	private static final int timeoutSocket = 20000;
 	private Context myContext;
-	private UICallback curCallBack;
+//	private UICallback curCallBack;
 	private ArrayList<CommunicationShareData> communicationShareData;// 沟通互动-沟通分享数据
 	/** 请求沟通互动-分享数据 */
 	public final static short MISSION_COMMUNICATION_SHARE = 11;
 	private ListView listview;
 	private CommunicationShareAdapter mCommunicationShareAdapter;
+	private Button btnThird;
 	
-	public void init(Context _Context, UICallback _UICallback) {
-		myContext = _Context;
-		curCallBack = _UICallback;
-
-	}
-	
-	// 回调接口
-	public interface UICallback {
-
-		public void call(short MISSION);
-
-	}
+//	public void init(Context _Context, UICallback _UICallback) {
+//		myContext = _Context;
+//		curCallBack = _UICallback;
+//
+//	}	
+//	// 回调接口
+//	public interface UICallback {
+//
+//		public void call(short MISSION);
+//
+//	}
 	
 	
 	@Override
@@ -113,6 +113,9 @@ public class secondActivity extends Activity{
 	   
 	   btnQuery =  (Button)findViewById(R.id.btnQuery);
 	   btnQuery.setOnClickListener(listener); 
+	   
+	   btnThird = (Button)findViewById(R.id.btnThird);
+	   btnThird.setOnClickListener(listener); 
 
 	}
 
@@ -135,6 +138,16 @@ public class secondActivity extends Activity{
 				intent.putExtra("back", "come from second activiy");
 				setResult(RESULT_CODE, intent);
 				finish();
+			
+			}
+			break;
+			case R.id.btnThird:{
+				//TODO Auto-generated method stub
+				Intent intent = new Intent();
+				intent.setClass(secondActivity.this, ThirdActivity.class);
+				intent.putExtra("str", "come from second activity");
+				//startActivity(intent);//无返回值的调用,启动一个明确的activity
+				startActivityForResult(intent, REQUEST_CODE);
 			
 			}
 			break;

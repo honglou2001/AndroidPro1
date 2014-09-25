@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.tools.adaptertool&apos; to &apos;NetHelper&apos;&#x0D;&#x0A;- Original project: &apos;activitydemo&apos;&#x0D;&#x0A;- Original element: &apos;com.example.tools.adaptertool&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.tools.NetHelper&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;adaptertool&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.example.tools{adaptertool.java[adaptertool" matchStrategy="1" name="NetHelper" qualified="false" references="true" similarDeclarations="false" stamp="1411630258280" textual="false" version="1.0"/>
+</session>

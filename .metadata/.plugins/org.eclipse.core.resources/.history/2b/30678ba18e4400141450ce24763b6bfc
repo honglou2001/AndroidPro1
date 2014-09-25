@@ -1,0 +1,175 @@
+package com.example.activitydemo;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import com.example.tools.NetHelper;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.example.activitydemo.secondActivity.DetailRequestListener;
+import com.example.domain.CommunicationShareData;
+import com.example.tools.CommunicationShareAdapter;
+import com.example.tools.NetHelper.IRequestListener;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.app.Activity;
+import android.content.Context;
+import android.util.Log;
+import android.view.Menu;
+import android.widget.ListView;
+
+public class ThirdActivity extends Activity {
+
+	private ArrayList<CommunicationShareData> communicationShareData;// 沟通互动-沟通分享数据
+	public final static short MISSION_COMMUNICATION_SHARE = 11;
+	private CommunicationShareAdapter mCommunicationShareAdapter;
+	private ListView listview;
+	private Context myContext;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_third);
+		
+		listview = (ListView)findViewById(R.id.communication_share_list);	
+		
+		BindData();
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.third, menu);
+		return true;
+	}
+	
+	
+	private void BindData()
+	{		
+		try {
+			
+			NetHelper helper = new  NetHelper();
+			helper.requestFDailyUrl(myContext,new DetailRequestListener());
+			
+			//Thread.sleep(10000);
+
+		} catch (Exception e) {
+			Log.e("Info", e.getMessage());
+			e.printStackTrace();
+		 
+		}finally{
+			
+		}
+	}
+	
+	/**
+	 * 回调数据到UI线程
+	 */
+	private Handler myHandler = new Handler() {
+		
+		@Override
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+			case MISSION_COMMUNICATION_SHARE:
+				call(MISSION_COMMUNICATION_SHARE);
+				break;
+			default:
+				break;
+			}
+		}
+	};
+	
+	
+	public void call(short MISSION) {
+		mCommunicationShareAdapter = new CommunicationShareAdapter(ThirdActivity.this, communicationShareData);
+		listview.setAdapter(mCommunicationShareAdapter);
+		
+	}
+	
+	View.OnTouchListener lis = new View.OnTouchListener() {
+		
+		@Override
+		public boolean onTouch(View v, MotionEvent event) {
+			// TODO Auto-generated method stub
+			switch (v.getId()) {
+			case R.id.communication_share_button:
+				switch(event.getAction()){
+				case MotionEvent.ACTION_DOWN:
+					communicationShareBotton.setImageResource(R.drawable.communication_share_button_click);
+					break;
+				case MotionEvent.ACTION_UP:
+					communicationShareBotton.setImageResource(R.drawable.communication_share_button);
+					sDateFormat = new SimpleDateFormat("yyyy-MM-dd mm:ss");
+					time = sDateFormat.format(new java.util.Date()); 
+					content = communicationShareEditText.getText().toString().trim();
+					if(content.equals("")){
+						Toast.makeText(CommunicationShareActivity.this, "内容为空，请输入再发！", 2000).show();
+					} else {
+						myServiceCtrl.requestCommunicationSharePost(MyApplication.fId, name, content);
+					}
+							
+					break;
+				default:
+					break;
+				}
+				break;
+			default:
+				break;
+			}
+			return true;
+		}
+
+		
+	};
+	
+	class DetailRequestListener implements IRequestListener {
+		@Override
+		public void onComplete(String response) {
+			try {
+				//m_commucationObj =  new CommunicationShareData();
+				
+				communicationShareData = new ArrayList<CommunicationShareData>();
+				communicationShareData.addAll(readCommunicationShare(response));
+				
+				Message myMessage = myHandler.obtainMessage();//new Message();
+				myMessage.what = MISSION_COMMUNICATION_SHARE;
+				myHandler.sendMessage(myMessage);
+								
+				Log.i("Info",response);
+				
+			} catch (Exception e) {
+				//e.printStackTrace();
+			 
+			}finally{
+				
+			}
+			
+		}
+		@Override
+		public void onError(Exception e) {
+			//Toast.makeText(myContext, "请求登录数据失败", 2000).show();
+		}
+	}	
+	
+	public static ArrayList<CommunicationShareData> readCommunicationShare(String resp)throws IOException, JSONException {
+		ArrayList<CommunicationShareData> mCommunicationShareDataList = new ArrayList<CommunicationShareData>();
+		JSONObject jsonObject = new JSONObject(resp).getJSONObject("AllInfo");
+		JSONArray json = jsonObject.getJSONArray("InfoList");
+		for(int i = 0; i < json.length(); i++){
+			JSONObject jsonObject2 = (JSONObject)json.opt(i);
+			CommunicationShareData mCommunicationShareData = new CommunicationShareData();
+			mCommunicationShareData.setContent(jsonObject2.getString("FContent"));
+			mCommunicationShareData.setDate(jsonObject2.getString("FTime"));
+			mCommunicationShareData.setName(jsonObject2.getString("FUser"));
+			mCommunicationShareDataList.add(mCommunicationShareData);
+		}
+		
+		return mCommunicationShareDataList;
+		
+	}
+	
+}

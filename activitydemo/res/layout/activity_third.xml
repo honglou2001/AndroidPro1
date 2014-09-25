@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+  <!-- 显示单元场位置和存栏头数 -->
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="45dip"
+	    android:gravity="center_vertical"
+	    android:id="@+id/top"
+	    android:background="@color/analysis_bg"
+	    >
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        >
+	        <TextView android:layout_width="180dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:id="@+id/textview"
+	            android:singleLine="true"
+	            android:ellipsize="middle"
+	            android:textSize="16dp"
+	            android:maxWidth="180dip"
+	            android:textColor="@color/black"
+	             android:textIsSelectable="false"
+	            />
+	    
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="right"
+	         android:layout_centerInParent="true"
+	        >
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="@string/cun_lan_num"
+        	    android:textSize="16dp"
+        	    android:textColor="@color/black"
+        	   
+        	    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textSize="16dp"
+        	    android:id="@+id/textview_num"
+        	    android:textColor="@color/red"
+        	    android:textIsSelectable="false"
+        	    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="@string/tou"
+        	    android:textSize="16dp"
+        	    android:layout_marginRight="10dip"
+        	    android:textColor="@color/black"
+        	    />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 分割线 -->
+    <ImageView android:layout_width="match_parent"
+            android:layout_height="3dip"
+             android:scaleType="fitXY"  android:src="@drawable/feeding_day_line_green"
+            android:contentDescription="@string/noting" 
+            android:layout_below="@id/top"
+            android:id="@+id/line"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/line"
+        android:orientation="vertical"
+        android:background="#e1e2e4"
+        >
+         <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@color/white">
+   		
+	   		 <ListView
+	   		     android:layout_width="match_parent"
+	   		     android:layout_height="match_parent"
+	   		     android:divider="@drawable/feeding_day_line_black"
+	   		     android:id="@+id/communication_share_list"
+	   		     />
+   		  </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="86dip"
+        android:id="@+id/bottom"
+        android:background="@drawable/communication_share_exit_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+   		 <LinearLayout android:layout_width="wrap_content"
+   		      android:layout_height="wrap_content"
+   		      android:layout_weight="5"
+   		      android:paddingLeft="5dip">
+	   		 <EditText android:layout_width="wrap_content"
+	   		     android:layout_height="65dip"
+	   		     android:background="@drawable/communication_share_button_exittext_bg"
+	   		     android:id="@+id/communication_share_edittext"
+	   		     android:padding="5dip"
+	   		     android:gravity="top|left"
+	   		     android:hint="输入信息"
+	   		     android:textColorHint="#bbbbbb" 
+                 android:textColor="@color/black"
+                 android:maxLength="100"
+	   		     />
+   		 </LinearLayout>
+   		  <LinearLayout android:layout_width="wrap_content"
+   		      android:layout_height="wrap_content"
+   		      android:layout_weight="1"
+   		      android:paddingRight="5dip">
+	   		 <ImageView android:layout_width="wrap_content"
+	   		     android:layout_height="65dip"
+	   		     android:layout_marginLeft="3dip"
+	   		     android:src="@drawable/communication_share_button"
+	   		     android:id="@+id/communication_share_button"
+	   		     />
+   		 </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

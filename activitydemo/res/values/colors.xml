@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 ESmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the APache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+      <color name="greenlight">#1d953f</color>
+    <color name="bluelight">#426ab3</color>
+    <color name="yellowlight">#fdb933</color>
+    <color name="redlight">#aa2116</color>
+    <color name="zise">#8552a1</color>
+    
+    <color name="leady">#72777b</color>
+	<color name="lightgreen">#90EE90</color>
+	<drawable name="grey">#FF808080</drawable>
+	<drawable name="white">#FFFFffff</drawable>
+	<color name="lightwhite">#ddd</color>
+	<!-- 黑色字体 -->
+	<color name="black">#000000</color>
+	<!-- 白色字体 -->
+	<color name="brandgriditem_textcolor">#ffffff</color>
+	<!-- 白色字体 -->
+	<color name="white">#ffffff</color>
+	<!-- 红色字体 -->
+	<color name="red">#ed1941</color>
+
+	<color name="transparent">#00000000</color><!-- 透明 -->
+	<color name="lightyellow">#fbffb3</color><!-- 纯黄色 -->
+	<!-- 灰色字体 -->
+	<color name="gray">#f8f8f8</color>
+	 
+	<color name="born_color">#d1c7b7</color>
+	
+	<!-- 栏目背景颜色 -->
+	<color name="analysis_bg">#f0fee9</color>
+	<!-- 字体绿色 -->
+	<color name="analysis_green">#52c21b</color> 
+	<color name="feed_fenbu_red">#ffc0504d</color>
+	<color name="feed_fenbu_green">#ff4f81bd</color>
+	<!-- 耳牌号字体蓝色 -->
+	<color name="feed_individual_blue">#0000d5</color>
+	<!-- 黄色 -->
+	<color name="feed_fenbu_yellow">#ffd400</color>
+	
+	<color name="dark">#ff535353</color>
+	
+	 <color name="dialog_line_up">#ffc0ced2</color>
+    <color name="dialog_line_down">#ffffffff</color>
+	
+</resources>
