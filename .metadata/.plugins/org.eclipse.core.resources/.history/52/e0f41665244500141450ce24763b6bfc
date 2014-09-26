@@ -118,7 +118,7 @@ public class ThirdActivity extends Activity {
 			case MISSION_COMMUNICATION_SHARE:
 				mCommunicationShareAdapter = new CommunicationShareAdapter(ThirdActivity.this, communicationShareData);
 				listview.setAdapter(mCommunicationShareAdapter);	
-				break;		
+				
 			case MISSION_COMMUNICATION_Response:
 				
 				if(communicationPostResp != null){
@@ -158,7 +158,7 @@ public class ThirdActivity extends Activity {
 					if(content.equals("")){
 						Toast.makeText(ThirdActivity.this, "内容为空，请输入再发！", 2000).show();
 					} else {
-						PostData(myContext,"1002","Admin",content,new PostResponseListener());
+						PostData(myContext,"1001","Admin",content,new DetailRequestListener());
 					}
 							
 					break;
