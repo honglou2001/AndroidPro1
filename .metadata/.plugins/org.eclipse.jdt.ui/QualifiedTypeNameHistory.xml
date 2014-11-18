@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.widget.EditText"/>
 <fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.os.Bundle"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
-<fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
 <fullyQualifiedTypeName name="com.example.dbmanager.PersonDAL"/>
 <fullyQualifiedTypeName name="com.example.dbmanager.DBHelper"/>
@@ -46,6 +44,19 @@
 <fullyQualifiedTypeName name="org.apache.http.conn.ClientConnectionManager"/>
 <fullyQualifiedTypeName name="org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager"/>
 <fullyQualifiedTypeName name="org.apache.http.impl.client.DefaultHttpClient"/>
-<fullyQualifiedTypeName name="com.example.activitydemo.R.id"/>
 <fullyQualifiedTypeName name="com.example.tools.CommunicationShareAdapter"/>
+<fullyQualifiedTypeName name="com.example.activitydemo.R.id"/>
+<fullyQualifiedTypeName name="com.example.tools.NetHelper.IRequestListener"/>
+<fullyQualifiedTypeName name="com.example.tools.NetHelper"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.view.MotionEvent"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.example.tools.Parameters"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.apache.http.params.HttpParams"/>
+<fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="com.example.domain.CommunicationSharePostData"/>
 </qualifiedTypeNameHistroy>
