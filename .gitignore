@@ -41,3 +41,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+.metadata/.plugins/org.eclipse.cdt.core/.log
+.metadata/.log
