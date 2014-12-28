@@ -1727,3 +1727,18 @@ java.lang.NumberFormatException: Color value '@drawable/feeding_menu_set' must s
 
 !ENTRY org.eclipse.ui 4 4 2014-09-25 18:08:28.149
 !MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+!SESSION 2014-10-01 18:58:08.359 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data G:\Java\android\AndroidPro1
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-10-01 18:58:09.227
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-10-01 18:58:10.853
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 4 4 2014-10-01 23:31:00.049
+!MESSAGE Invalid preference page path: XML Syntax

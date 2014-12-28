@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="34" version="2.0">
+<workbench progressCount="41" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="114" y="64">
 <fastViewData fastViewLocation="1024"/>
@@ -12,16 +12,16 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="61" y="22"/>
-<coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="50" y="22"/>
-<coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="37" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="74" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="98" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="109" y="22"/>
+<coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="185" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -42,30 +42,35 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="E:/vss/007手机版/Android/Code/新建文件夹/activitydemo/src/com/example/activitydemo/MainActivity.java" title="MainActivity.java" tooltip="activitydemo/src/com/example/activitydemo/MainActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/src/com/example/activitydemo/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="2111" selectionTopPixel="51"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThirdActivity.java" partName="ThirdActivity.java" path="G:/Java/android/AndroidPro1/activitydemo/src/com/example/activitydemo/ThirdActivity.java" title="ThirdActivity.java" tooltip="activitydemo/src/com/example/activitydemo/ThirdActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/src/com/example/activitydemo/ThirdActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2627" selectionTopPixel="782"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="secondActivity.java" partName="secondActivity.java" path="E:/vss/007手机版/Android/Code/新建文件夹/activitydemo/src/com/example/activitydemo/secondActivity.java" title="secondActivity.java" tooltip="activitydemo/src/com/example/activitydemo/secondActivity.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="secondActivity.java" partName="secondActivity.java" path="G:/Java/android/AndroidPro1/activitydemo/src/com/example/activitydemo/secondActivity.java" title="secondActivity.java" tooltip="activitydemo/src/com/example/activitydemo/secondActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/src/com/example/activitydemo/secondActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6813" selectionTopPixel="3698"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6717" selectionTopPixel="3428"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_second.xml" partName="activity_second.xml" path="E:/vss/007手机版/Android/Code/新建文件夹/activitydemo/res/layout/activity_second.xml" title="activity_second.xml" tooltip="activitydemo/res/layout/activity_second.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/res/layout/activity_second.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommunicationShareAdapter.java" partName="CommunicationShareAdapter.java" path="E:/vss/007手机版/Android/Code/新建文件夹/activitydemo/src/com/example/tools/CommunicationShareAdapter.java" title="CommunicationShareAdapter.java" tooltip="activitydemo/src/com/example/tools/CommunicationShareAdapter.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommunicationShareAdapter.java" partName="CommunicationShareAdapter.java" path="G:/Java/android/AndroidPro1/activitydemo/src/com/example/tools/CommunicationShareAdapter.java" title="CommunicationShareAdapter.java" tooltip="activitydemo/src/com/example/tools/CommunicationShareAdapter.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/src/com/example/tools/CommunicationShareAdapter.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="769" selectionTopPixel="85"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="769" selectionTopPixel="0"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_second_item.xml" partName="activity_second_item.xml" path="E:/vss/007手机版/Android/Code/新建文件夹/activitydemo/res/layout/activity_second_item.xml" title="activity_second_item.xml" tooltip="activitydemo/res/layout/activity_second_item.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/res/layout/activity_second_item.xml"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="E:/vss/007手机版/Android/Code/新建文件夹/activitydemo/res/layout/activity_main.xml" title="activity_main.xml" tooltip="activitydemo/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/res/layout/activity_main.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetHelper.java" partName="NetHelper.java" path="G:/Java/android/AndroidPro1/activitydemo/src/com/example/tools/NetHelper.java" title="NetHelper.java" tooltip="activitydemo/src/com/example/tools/NetHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/activitydemo/src/com/example/tools/NetHelper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1138" selectionTopPixel="60"/>
 </editor>
 </editors>
 <views>
@@ -95,12 +100,13 @@
 <view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer">
 <viewState/>
 </view>
+<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (29 items)"/>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (38 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="640"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -109,9 +115,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1407382985202">
@@ -252,7 +255,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.29920363"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.29920363"/>
 <view id="org.eclipse.ui.console.ConsoleView" ratio="0.29920363"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29920363"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29903537"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@9719f4" orientation="256" selectedTabId="org.vssplugin.ui.checkout" style="0">
@@ -391,7 +394,7 @@
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@1e87908" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
 <fastViews>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29920363"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29903537"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1c605ae" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">
@@ -561,34 +564,11 @@
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=activitydemo/G:\/Android\/android-sdk-windows\/platforms\/android-17\/android.jar&lt;java.lang(Exception.class"/>
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=activitydemo/G:\/Android\/android-sdk-windows\/platforms\/android-17\/android.jar&lt;java.lang(Throwable.class"/>
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=activitydemo/G:\/Android\/android-sdk-windows\/platforms\/android-17\/android.jar&lt;java.lang(ThreadGroup.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/activitydemo/src/com/example/tools/CommunicationShareAdapter.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/activitydemo/src/com/example/activitydemo/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/activitydemo/src/com/example/activitydemo/ThirdActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/activitydemo/src/com/example/tools/NetHelper.java"/>
 </editors>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="5606" y="0"/>
-</item>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="5677" y="0"/>
-</item>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="5753" y="0"/>
-</item>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="5821" y="0"/>
-</item>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="5872" y="0"/>
-</item>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="5925" y="0"/>
-</item>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="6053" y="0"/>
-</item>
-<item historyLabel="secondActivity.java" index="0">
-<position info="not_deleted" x="5110" y="0"/>
-</item>
-<item historyLabel="InvocationTargetException.class" index="1">
-<position/>
-</item>
 <item historyLabel="Exception.class" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
@@ -709,8 +689,35 @@
 <item historyLabel="secondActivity.java" index="0">
 <position info="not_deleted" x="5925" y="0"/>
 </item>
-<item active="true" historyLabel="secondActivity.java" index="0">
+<item historyLabel="secondActivity.java" index="0">
 <position info="not_deleted" x="5937" y="27"/>
+</item>
+<item historyLabel="CommunicationShareAdapter.java" index="5">
+<position info="not_deleted" x="769" y="0"/>
+</item>
+<item historyLabel="secondActivity.java" index="0">
+<position info="not_deleted" x="7406" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="2111" y="10"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="8108" y="0"/>
+</item>
+<item historyLabel="ThirdActivity.java" index="7">
+<position info="not_deleted" x="5269" y="3"/>
+</item>
+<item historyLabel="NetHelper.java" index="8">
+<position info="not_deleted" x="1138" y="0"/>
+</item>
+<item historyLabel="ThirdActivity.java" index="7">
+<position info="not_deleted" x="2530" y="0"/>
+</item>
+<item historyLabel="ThirdActivity.java" index="7">
+<position info="not_deleted" x="2674" y="0"/>
+</item>
+<item active="true" historyLabel="ThirdActivity.java" index="7">
+<position info="not_deleted" x="2530" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -718,18 +725,11 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@126f816"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@28ebb4"/>
 <trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@4a4e31"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1c605ae"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -747,6 +747,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetHelper.java" tooltip="activitydemo/src/com/example/tools/NetHelper.java">
+<persistable path="/activitydemo/src/com/example/tools/NetHelper.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ThreadGroup.class" tooltip="java.lang.ThreadGroup">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=activitydemo/G:\/Android\/android-sdk-windows\/platforms\/android-17\/android.jar&lt;java.lang(ThreadGroup.class"/>
 </file>

@@ -256,7 +256,7 @@ public class secondActivity extends Activity{
 	public void requestFDailyUrl(Context myContext, final IRequestListener listener) {
 		// TODO Auto-generated method stub
 
-		final String registerString ="http://www.rntech.com.cn:820/Comminicate/GetInfo.ashx";
+		final String registerString ="http://14.17.77.81:820/Comminicate/GetInfo.ashx";
 		new Thread(){
 			public void run() {
                 try {

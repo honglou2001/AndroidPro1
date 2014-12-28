@@ -29,7 +29,7 @@ import android.util.Log;
 
 public class NetHelper {
 
-	public static final String url =  "http://www.rntech.com.cn:820";
+	public static final String url =  "http://14.17.77.81:820";
 	public static boolean debug = true;
 	private static final int timeoutConnection = 20000;   
 	private static final int timeoutSocket = 20000;
@@ -37,7 +37,7 @@ public class NetHelper {
 	
 	public void requestFDailyUrl(Context myContext, final IRequestListener listener) {
 		// TODO Auto-generated method stub
-		final String registerString ="http://www.rntech.com.cn:820/Comminicate/GetInfo.ashx";
+		final String registerString ="http://14.17.77.81:820/Comminicate/GetInfo.ashx";
 		new Thread(){
 			public void run() {
                 try {

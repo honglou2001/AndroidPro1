@@ -19,4 +19,42 @@
 <entry path="D:\Program Files (x86)\Java\jre6\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="G:\Java\jre" version="1.6.0_31">
+<bootpath>
+<entry path="G:\Java\jre\lib\resources.jar"/>
+<entry path="G:\Java\jre\lib\rt.jar"/>
+<entry path="G:\Java\jre\lib\sunrsasign.jar"/>
+<entry path="G:\Java\jre\lib\jsse.jar"/>
+<entry path="G:\Java\jre\lib\jce.jar"/>
+<entry path="G:\Java\jre\lib\charsets.jar"/>
+<entry path="G:\Java\jre\lib\modules\jdk.boot.jar"/>
+<entry path="G:\Java\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="G:\Java\jre\lib\ext"/>
+<entry path="C:\windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="G:\Java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="G:\Java" version="1.6.0_31">
+<bootpath>
+<entry path="G:\Java\jre\lib\resources.jar"/>
+<entry path="G:\Java\jre\lib\rt.jar"/>
+<entry path="G:\Java\jre\lib\sunrsasign.jar"/>
+<entry path="G:\Java\jre\lib\jsse.jar"/>
+<entry path="G:\Java\jre\lib\jce.jar"/>
+<entry path="G:\Java\jre\lib\charsets.jar"/>
+<entry path="G:\Java\jre\lib\modules\jdk.boot.jar"/>
+<entry path="G:\Java\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="G:\Java\jre\lib\ext"/>
+<entry path="C:\windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="G:\Java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 </libraryInfos>
