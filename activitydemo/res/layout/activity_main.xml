@@ -62,4 +62,12 @@
         android:layout_marginTop="30dp" >
     </ListView>
 
+    <Button
+        android:id="@+id/btnAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnQueryMain"
+        android:layout_alignRight="@+id/listView"
+        android:text="AnimationAct" />
+
 </RelativeLayout>

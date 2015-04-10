@@ -51,7 +51,7 @@
 </bootpath>
 <extensionDirs>
 <entry path="G:\Java\jre\lib\ext"/>
-<entry path="C:\windows\Sun\Java\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
 </extensionDirs>
 <endorsedDirs>
 <entry path="G:\Java\jre\lib\endorsed"/>

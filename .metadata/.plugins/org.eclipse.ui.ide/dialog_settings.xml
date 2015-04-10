@@ -11,15 +11,15 @@
 	<section name="SaveAsDialogSettings">
 		<item value="525" key="DIALOG_WIDTH"/>
 		<item value="129" key="DIALOG_Y_ORIGIN"/>
-		<item value="382" key="DIALOG_X_ORIGIN"/>
 		<item value="548" key="DIALOG_HEIGHT"/>
+		<item value="382" key="DIALOG_X_ORIGIN"/>
 		<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="CleanDialogSettings">
-		<item value="492" key="DIALOG_WIDTH"/>
+		<item value="500" key="DIALOG_WIDTH"/>
 		<item value="258" key="DIALOG_Y_ORIGIN"/>
-		<item value="348" key="DIALOG_HEIGHT"/>
 		<item value="394" key="DIALOG_X_ORIGIN"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>

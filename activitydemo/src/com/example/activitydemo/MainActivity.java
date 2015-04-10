@@ -50,6 +50,7 @@ public class MainActivity extends Activity {
 	 private static final String TAG = "ActivityDemo";     
 	 private EditText mEditText; 	 
 	 private Button callButton = null;
+	 private Button btnAnimation = null;
 	 private static final int REQUEST_CODE=1;
 	 private Button btnCreateDB = null;
 	 private Button btnCreateTable = null;
@@ -66,7 +67,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);         
         mEditText = (EditText)findViewById(R.id.editText123);        
         callButton = (Button)findViewById(R.id.callButton);
-        callButton.setOnClickListener(listener);        
+        callButton.setOnClickListener(listener);     
+        
+        btnAnimation = (Button)findViewById(R.id.btnAnimation);
+        btnAnimation.setOnClickListener(listener);  
+        
         btnInsertRec =  (Button)findViewById(R.id.btnInsertRec);
         listView  =  (ListView)findViewById(R.id.listView);
         btnInsertRec.setOnClickListener(listener); 
@@ -218,6 +223,16 @@ public class MainActivity extends Activity {
 		   	intent.setData(Uri.parse("tel:10086"));
 		   	startActivity(intent);
 		   	Log.i("aa", "bb");*/							
+			}
+			break;
+			case R.id.btnAnimation:{
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, AnimationActivity.class);
+				intent.putExtra("str", "come from first activity");
+				//startActivity(intent);//无返回值的调用,启动一个明确的activity
+				startActivityForResult(intent, REQUEST_CODE);
+									
 			}
 			break;
 			case R.id.btnInsertRec:{
